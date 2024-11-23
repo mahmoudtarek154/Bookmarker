@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Marker</title>
+    <link
+      rel="shortcut icon"
+      href="images/favorite_13958925.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spicy Rice"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+
+  <body>
+  <div class="palettecolor ">  <i onclick="orangecolor ()" class=" fa-solid fa-palette fixed-top fixidi" id="orangecolor"></i>
+    <i onclick="redcolor ()" class=" fa-solid fa-palette fixed-top fixidi1" id="redcolor"></i>
+    <i onclick="greencolor ()" class=" fa-solid fa-palette fixed-top fixidi2" id="greencolor"></i>
+    <i onclick=" bluecolor ()"  class=" fa-solid fa-palette fixed-top fixidi3" id="bluecolor"></i>
+    <i onclick="lemoncolor ()"  class=" fa-solid fa-palette fixed-top fixidi4" id="lemoncolor"></i>
+    <i onclick="purplecolor ()" class=" fa-solid fa-palette fixed-top fixidi5" id="purplecolor"></i>
+    <i onclick="pinkcolor ()" class=" fa-solid fa-palette fixed-top fixidi6" id="purplecolor"></i></div>
+    <header>
+      <div>
+        <h1 id="fixidi" class="text-center mt-5">Book<span>marker</span></h1>
+      </div>
+      <svg
+        class="svg1"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M46.5,24.4C36.9,43.5,-10.4,38.4,-24.4,16.7C-38.5,-5,-19.2,-43.3,4.4,-40.7C28.1,-38.2,56.1,5.2,46.5,24.4Z"
+          transform="translate(100 100)"
+        />
+      </svg>
+      <svg
+        class="svg2"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6,6.4C7.9,29.3,-28.2,33.2,-35.5,12.3C-42.8,-8.6,-21.4,-54.3,-3.4,-56.2C14.6,-58.2,29.3,-16.4,18.6,6.4Z"
+          transform="translate(190 50)"
+        />
+      </svg>
+      <p class="text-center mt-3 fs-4">
+        <i class="fa-regular fa-bookmark me-2"></i> Bookmark your favorite
+        sites<i class="fa-regular fa-bookmark ms-3"></i>
+      </p>
+    </header>
+    <div class="container container1">
+      <form id="">
+        <div class="mb-5">
+          <label for="exampleInputEmail1" class="form-label fw-semibold"
+            ><i class="fa-solid fa-globe me-2"></i>Site Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="SiteName"
+          />
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputPassword1" class="form-label fw-semibold "
+            ><i class="fa-solid fa-link ME-2 "></i> Site URL</label
+          >
+          <input   type="url"  class="form-control" id="SiteURL" />
+        </div>
+
+        <div class="text-center">
+          <button
+            onclick="siteInformationAdd ()"
+            id="submit"
+            type="submit"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+
+   
+    </div>
+    <div>
+      <table class="table container mt-5 table-borderless container2">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="TableBody">
+      
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
