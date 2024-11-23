@@ -76,7 +76,7 @@ function pinkcolor (){
 
 function siteInformationAdd() {
   var urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([/\w \.-]*)*\/?$/;
-var SiteNameinput = /^[A-Za-z]{3,16}$/;
+var SiteNameinput = /[A-Za-z]{3,16}/;
   
 if(!urlPattern.test(SiteURL.value) &&!SiteNameinput.test(SiteName.value)) {
 
