@@ -1,145 +1,74 @@
-:root{
-    --main-color : #ff894c;
-    --second-color :#ffb6b9;
-    --third-color : #00adb5 ;
-    --fourth-color : #2772db ;
-    --fifth-color : #a9c52f ;
-    --six-color : #9d53c3;
-    --seven-color : #ff347f ;
+@font-face {
+    font-family: Wildlife;
+    src: url(../webfonts/Wildlife\ Park.otf);
   }
- 
+  body{
+    background-color: #303841;
+  }
+  h2{
+    color: #eeeeee;
+    font-family:Wildlife ;
+    font-size: 80px;
+  }
+  *{
+    font-family: cursive;
+  }
+  
+  form{
+    background-color: #303841;
+  }
 
-body{
-    background-color: #f8f8f8;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
- *::selection{
-    background-color: var(--main-color);
-    color: #303841;
- }
-  h1{
-    font-family: 'Spicy Rice';
-    font-size: 50px;
-
-  }
-  h1 span{
-    color: var(--main-color);
-  }
-  .svg1{
-    width: 30%;
-    position: absolute;
-    top: 30%;
-    left: -16%;
-  }
-  .svg2{
-    width: 30%;
-    position: absolute;
-    top: 0;
-    right: 0;
-   
-
-  }
-  header i{
-    color:var(--main-color);
-  }
-.container1{
-    width: 65%;
-}
-#submit{
-    padding: 10px 45px;
-    background-color: var(--main-color);
-    border: 2px solid var(--main-color);
-    transition: 0.5s;
-}
-#submit:hover{
-
-    background-color: #dc2f2f;
-    border: 2px solid #dc2f2f;
-}
-.container2{
-    width: 65%;
-
-}
-.container1 i {
-    color: var(--main-color);
-}
 .svg1{
-    fill: var(--main-color);
+    position: absolute;
+    width: 15%;
+    top: -30%;
+    left: -5%;
+    fill: #eeeeee ;
+    z-index: -1;
+    animation: pulse 3s infinite;
 
 }
 .svg2{
-    fill: var(--main-color);
+    position: absolute;
+    width: 15%;
+    top: 60%;
+    right: 2%;
+    fill: #eeeeee ;
+    height: 250px;
+    animation: pulse 3s 0.5S infinite;
 
+}
+.navbar{
+    background-color: #303841;
+
+}
+.navbara{
+    font-family:Wildlife ;
+font-size: 50px;
+color: #eeeeee;
+
+}
+.welcome{
+    margin-top: 20vh;
+    color: #eeeeee;
+}
+.welcome h1{
+    font-family:Wildlife ;
+font-size: 100px;
+padding: 5vh;
 }
 
 
-.fixidi{
-    color: #ff894c ;
-    font-size: 25px;
-    width: 3% ;
-    top: 5% ;
-   cursor: pointer;
-    cursor: pointer;
-    left: 1%;
 
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
-.fixidi1{
-    color: var(--second-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 9% ;
-   cursor: pointer;
-    cursor: pointer;
-    left: 1%;
-
-}
-.fixidi2{
-    color: var(--third-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 13% ;
-   cursor: pointer;
-    cursor: pointer;
-    left: 1%;
-
-
-}
-.fixidi3{
-    color: var(--fourth-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 17% ;
-    left: 1%;
-    cursor: pointer;
-
-}
-.fixidi4{
-    color: var(--fifth-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 21% ;
-    left: 1%;
-    cursor: pointer;
-
-}
-.fixidi5{
-    color: var(--six-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 25% ;
-    left: 1%;
-    cursor: pointer;
-
-}
-.fixidi6{
-    color: var(--seven-color);
-    font-size: 25px;
-    width: 3% ;
-    top: 29% ;
-    left: 1%;
-    cursor: pointer;
-
-}
-.palettecolor{
-    display: none;
+a{
+  cursor: pointer;
 }

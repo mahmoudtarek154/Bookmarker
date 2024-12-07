@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login </title>
-    <link rel="shortcut icon" href="images/login.png" type="image/x-icon">
+    <title>Home page</title>
+    <link rel="shortcut icon" href="images/account.png" type="image/x-icon">
 
     <link
       href="https://fonts.googleapis.com/css?family=Spicy Rice"
@@ -16,48 +16,25 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
-  <body>
-    <div>
-      <form class="w-50 m-auto mt-5 p-5 shadow-lg">
-        <h2 class="text-center">Smart Login System</h2>
-        <div class="mb-3">
-          <input
-            type="email"
-            class="form-control signinemail"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter your email"
-          />
-          <div id="emailHelp" class="form-text text-white-50">
-            We'll never share your email with anyone else.
-          </div>
-        </div>
-        <div class="mb-3">
-          <input
-            type="password"
-            class="form-control signinpassword"
-            id="exampleInputPassword1"
-            placeholder="Enter your password"
-          />
-        </div>
 
-        <button
-          onclick="signin()"
-          type="button"
-          class="btn btn-outline-light w-100 mb-3 mt-3"
-        >
-          Login
-        </button>
-        <p class="text-center mb-0 text-white-50">
-          Don’t have an account?
-          <span>
-            <a onclick="signup()" class="text-white text-decoration-none">
-              Sign Up</a
-            >
-          </span>
-        </p>
-      </form>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-lg">
+      <div class="container">
+        <a class="navbar-brand navbara" href="#">SMART LOGIN</a>
+
+        <button onclick="logout ()" class="btn btn-outline-light logout" type="submit">Logout</button>
+      </div>
+    </nav>
+
+    <div class="welcome text-center shadow-lg w-50 mx-auto">
+      <h1 class="welcomeh1">
+        welcome 
+      </h1>
     </div>
+
+
+
+
 
     <div>
       <svg
